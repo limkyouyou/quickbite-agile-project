@@ -88,7 +88,7 @@ All four members are Developers and must make a meaningful technical contributio
 - Lead analysis of the required stakeholder change.
 - Update Product Backlog after stakeholder feedback.
 
-**Technical**
+**Technical** (To be confirmed)
 - Implement menu and menu rendering:
   - fixed restaurant information;
   - menu item data;
@@ -128,7 +128,7 @@ All four members are Developers and must make a meaningful technical contributio
 - Ensure the board stays current.
 - Facilitate the Sprint Retrospective.
 
-**Technical**
+**Technical** (To be confirmed)
 - Implement order form and validation:
   - customer-name input;
   - read selected items/quantities;
@@ -163,7 +163,7 @@ All four members are Developers and must make a meaningful technical contributio
 - Part D — Execute Sprint and Produce Working Increment
 - Part G — Sprint Review and Stakeholder Feedback
 
-**Technical**
+**Technical** (To be confirmed)
 - Implement order processing and confirmation:
   - receive validated order input;
   - construct the order data/object;
@@ -201,7 +201,7 @@ All four members are Developers and must make a meaningful technical contributio
 - Part H — Sprint Retrospective
 - Coordinate Agile Reflection
 
-**Technical**
+**Technical** (To be confirmed)
 - Implement persistence and integration:
   - define how completed orders are stored;
   - implement save/retrieve operations;
