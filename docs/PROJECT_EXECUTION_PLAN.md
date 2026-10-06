@@ -362,17 +362,18 @@ The team has already confirmed:
 - technical work division;
 - React as the development technology;
 - Product Backlog priorities and estimates;
-- Definition of Done.
-
-**Scrum Master**
-- Begin documenting Sprint Planning.
-- Confirm the Sprint Goal with the team.
-- Record the team capacity assessment.
+- Definition of Done;
+- Sprint Goal;
 - Confirm the selected Sprint PBIs:
   - PBI-01 — View Restaurant Menu;
   - PBI-02 — Select Menu Items;
   - PBI-03 — Select Pickup Time;
   - PBI-04 — Submit Order.
+
+**Scrum Master**
+- Begin documenting Sprint Planning.
+- Record the Sprint Goal.
+- Record the team capacity assessment.
 - Begin breaking selected PBIs into engineering tasks with the Developers.
 - Begin creating the Sprint Backlog in GitHub Projects.
 - Coordinate initial technical dependencies and work assignments.
@@ -384,8 +385,8 @@ The team has already confirmed:
 - Review dependencies between assigned components.
 
 **Product Owner**
-- Finalize Part B Product Backlog work.
-- Clarify PBI requirements and acceptance criteria as needed.
+- Finalize Part B Product Backlog work. **Done**
+- Clarify PBI requirements and acceptance criteria as needed. **Done**
 
 ---
 
