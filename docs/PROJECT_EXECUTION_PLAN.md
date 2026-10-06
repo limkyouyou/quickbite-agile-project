@@ -24,7 +24,7 @@ We are **not** implementing the complete QuickBite system.
 - **Google Docs:** final team report.
 - **`docs/PROJECT_EXECUTION_PLAN.md`:** team execution reference.
 
-Development technology will be confirmed during Sprint Planning. Plain HTML/CSS/JavaScript or Python/Flask are current options.
+The team will use **React** for the QuickBite implementation.
 
 ---
 
@@ -32,21 +32,28 @@ Development technology will be confirmed during Sprint Planning. Plain HTML/CSS/
 
 ### Sprint Goal
 
-> Allow a customer to view a restaurant menu and submit a simple food order.
+> Allow a customer to view a restaurant menu, select items and a pickup time, and submit a simple food order.
 
 ### Sprint PBIs
 
-**PBI 1 — View Restaurant Menu**  
+**PBI-01 — View Restaurant Menu**  
 Customer can view one fixed restaurant and its menu.
 
-**PBI 2 — Place Simple Order**  
-Customer can select menu items, enter a name, submit the order, and receive confirmation.
+**PBI-02 — Select Menu Items**  
+Customer can select menu items and adjust item quantities.
+
+**PBI-03 — Select Pickup Time**  
+Customer can select a pickup time for the order.
+
+**PBI-04 — Submit Order**  
+Customer can provide a pickup name, submit the order, and receive an on-screen confirmation.
 
 ### Intended Increment
 
 Menu  
-→ Select item(s)  
-→ Enter customer name  
+→ Select item(s) and quantities  
+→ Select pickup time  
+→ Enter pickup name  
 → Submit order  
 → Validate/process order  
 → Save order  
@@ -54,16 +61,15 @@ Menu
 
 ### Out of Scope for This Sprint
 
+- browsing multiple restaurants;
 - cart page;
-- pickup-time selection;
 - employee interface;
 - order-status management;
-- login;
-- multiple restaurants;
+- customer account/login;
 - payment;
-- notifications.
+- external order notifications.
 
-These can remain in the Product Backlog for future Sprints.
+The Sprint uses one fixed restaurant. These additional features remain in the Product Backlog for future Sprints.
 
 ---
 
@@ -271,7 +277,7 @@ PBIs are ordered by product value and dependency, not by PBI number.
 |---|---|---|---|---:|---|
 | 1 | PBI-05 | Browse Restaurants | High | 3 | Future |
 | 2 | PBI-01 | View Restaurant Menu | High | 3 | Current Sprint |
-| 3 | PBI-02 | Select Menu Items | High | 3 | Current Sprint |+
+| 3 | PBI-02 | Select Menu Items | High | 3 | Current Sprint |
 | 4 | PBI-03 | Select Pickup Time | High | 2 | Current Sprint |
 | 5 | PBI-04 | Submit Order | High | 5 | Current Sprint |
 | 6 | PBI-06 | Restaurant Views Incoming Orders | High | 5 | Future |
@@ -285,7 +291,7 @@ PBIs are ordered by product value and dependency, not by PBI number.
 
 Detailed descriptions, user stories, and acceptance criteria for each PBI are maintained in the corresponding GitHub Issues.
 
-Only PBIs 1–4 are initially planned for this Sprint.
+PBI-01, PBI-02, PBI-03, and PBI-04 are selected for the current Sprint.
 
 ### Estimation
 
@@ -343,81 +349,126 @@ Avoid significant direct development on `main`.
 
 ## 10. Seven-Day Schedule
 
-### Before Meeting 1
+### Day 1 — Sprint Planning and Setup
 
-**Product Owner**
-- Prepare 10+ initial PBIs.
-- Prepare user stories and acceptance criteria.
-- Prepare initial priority order and top-five rationale.
-- Propose Sprint Goal.
+Meeting 1 has been completed.
+
+The team has already confirmed:
+
+- Product Backlog;
+- Sprint scope;
+- team capability;
+- Scrum roles;
+- technical work division;
+- React as the development technology;
+- Product Backlog priorities and estimates;
+- Definition of Done.
 
 **Scrum Master**
-- Prepare GitHub Project.
-- Prepare board statuses.
-- Prepare meeting/Daily Scrum note template.
+- Begin documenting Sprint Planning.
+- Confirm the Sprint Goal with the team.
+- Record the team capacity assessment.
+- Confirm the selected Sprint PBIs:
+  - PBI-01 — View Restaurant Menu;
+  - PBI-02 — Select Menu Items;
+  - PBI-03 — Select Pickup Time;
+  - PBI-04 — Submit Order.
+- Begin breaking selected PBIs into engineering tasks with the Developers.
+- Begin creating the Sprint Backlog in GitHub Projects.
+- Coordinate initial technical dependencies and work assignments.
 
-**Everyone**
-- Review assignment and proposed backlog.
-- Confirm Sprint availability.
+**Developers**
+- Participate in engineering-task breakdown.
+- Confirm that assigned work is realistic for the Sprint.
+- Prepare the React development environment.
+- Review dependencies between assigned components.
+
+**Product Owner**
+- Finalize Part B Product Backlog work.
+- Clarify PBI requirements and acceptance criteria as needed.
 
 ---
 
-### Day 1 — Meeting 1
+### Day 2 — Finalize Sprint Backlog and Begin Development
 
-**Sprint Planning**
-1. Confirm Product Backlog.
-2. Clarify PBIs.
-3. Estimate PBIs.
-4. Confirm backlog ordering.
-5. Establish Sprint Goal.
-6. Assess team capacity.
-7. Select Sprint PBIs.
-8. Break PBIs into engineering tasks.
-9. Coordinate technical work.
-10. Confirm Definition of Done.
-11. Create Sprint Backlog.
-12. Confirm development technology.
+**Scrum Master and Developers**
+- Finalize engineering tasks for the selected PBIs.
+- Finalize the Sprint Backlog.
+- Confirm task ownership and technical dependencies.
+- Confirm the initial development sequence.
+- Ensure the GitHub Project reflects the selected Sprint work.
 
-Begin development.
-
-**Daily Scrum #1**
-- progress toward Sprint Goal;
-- next work;
-- impediments;
-- necessary plan changes.
+**Developers**
+- Create appropriate feature branches.
+- Begin implementation of assigned Sprint work.
+- Make meaningful commits.
+- Update work status in GitHub Projects.
 
 **Capture**
-- Product Backlog;
-- acceptance criteria;
-- estimates/priorities;
-- DoD;
 - Sprint Goal;
+- capacity assessment;
+- selected Sprint PBIs;
+- engineering-task breakdown;
 - Sprint Backlog;
-- initial board;
-- Daily Scrum #1.
+- initial task coordination;
+- initial Sprint board.
 
 ---
 
-### Days 2–3 — Development
+### Day 3 — Daily Scrum #1 and Development
 
-- Create branches.
-- Implement assigned work.
-- Make meaningful commits.
-- Update GitHub Project.
-- Open early PRs.
-- Review code.
-- Begin integration/testing.
+**Daily Scrum #1**
+
+Focus on:
+
+- progress toward the Sprint Goal;
+- completed or active work;
+- work to do next;
+- dependencies;
+- impediments;
+- any necessary adaptation.
+
+**After the Daily Scrum**
+- Continue implementation.
+- Update the Sprint Backlog based on the discussion.
+- Resolve identified dependencies or impediments.
+- Continue meaningful commits and early testing.
+
+**Capture**
+- important progress;
+- identified impediments;
+- coordination decisions;
+- adaptations made;
+- updated Sprint Backlog.
 
 ---
 
-### Day 4 — Meeting 2
+### Day 4 — Development and Integration
+
+Focus on:
+
+- continuing implementation of Sprint PBIs;
+- integrating related components;
+- opening pull requests when work is ready;
+- reviewing code from other team members;
+- running relevant feature-level tests;
+- keeping the Sprint Backlog current.
+
+Do not add unnecessary scope.
+
+---
+
+### Day 5 — Daily Scrum #2 and Required Stakeholder Change
 
 **Daily Scrum #2**
-- Sprint Goal progress;
-- dependencies;
-- next work;
+
+Focus on:
+
+- progress toward the Sprint Goal;
+- current dependencies;
+- remaining work;
 - impediments;
-- adaptations.
+- necessary adaptations.
 
 **Required Stakeholder Change**
 
@@ -425,67 +476,75 @@ Analyze:
 
 > Customers should only select pickup times that the restaurant can realistically support based on current workload.
 
-Determine:
+The team will determine:
 
 - what changed;
 - stakeholder clarification questions;
-- new/modified PBI;
-- priority;
-- estimate;
-- whether the current Sprint should change;
+- whether PBI-03 should be modified or a new enhancement PBI should be created;
+- priority of the change;
+- Story Point estimate or re-estimate;
+- whether the change should be implemented in the current Sprint or moved to a future Sprint;
 - whether the Sprint Goal remains valid;
-- what belongs in a future Sprint.
+- any required Sprint Backlog adaptation.
 
-Recommended approach: modify the future pickup-time PBI to include restaurant capacity and keep it outside the current Sprint unless the team finds a strong reason to change the Sprint.
+Because pickup-time selection is already part of the current Sprint, the team must evaluate the impact of the new workload-based requirement before deciding how to respond.
 
 **Capture**
 - Daily Scrum #2;
-- backlog before change;
+- Product Backlog before the change;
+- stakeholder clarification questions;
 - change analysis;
-- modified/new PBI;
-- backlog after change;
+- modified or new PBI;
+- priority and estimate decision;
+- current-Sprint versus future-Sprint decision;
+- Sprint Goal impact;
+- Product Backlog after the change;
 - Sprint Backlog adaptation, if any.
 
 ---
 
-### Days 5–6 — Finish the Increment
+### Day 6 — Finish and Verify the Increment
 
 Focus on:
 
-- completing Sprint work;
+- completing remaining Sprint work;
 - pull requests;
 - code reviews;
 - integration;
 - automated testing;
 - bug fixing;
-- acceptance criteria;
-- Definition of Done.
+- verification against acceptance criteria;
+- verification against the Definition of Done.
 
-Do not add unnecessary scope.
+The team should avoid introducing new functionality unless required to complete the Sprint Goal.
 
 ---
 
-### Day 7 — Meeting 3
+### Day 7 — Daily Scrum #3, Sprint Review, and Retrospective
 
 **Daily Scrum #3**
+
+Focus on:
+
 - remaining work;
 - Sprint Goal status;
-- impediments;
-- final adaptations.
+- final impediments;
+- final coordination or adaptation needed before the Sprint Review.
 
-**Sprint Review**
+### Sprint Review
 
-Demonstrate:
+Demonstrate the working Increment:
 
 Menu  
-→ Select item(s)  
-→ Enter name  
+→ Select item(s) and quantities  
+→ Select pickup time  
+→ Enter pickup name  
 → Submit order  
 → Order confirmation
 
 Obtain at least **three realistic stakeholder feedback items**.
 
-For each decide:
+For each feedback item, decide whether to:
 
 - Accept;
 - Reject;
@@ -494,18 +553,27 @@ For each decide:
 
 Update the Product Backlog where appropriate.
 
-**Sprint Retrospective**
+### Sprint Retrospective
 
 Discuss:
 
 - what went well;
-- what did not;
+- what did not go well;
 - what slowed the team;
 - what helped collaboration;
-- whether the DoD worked;
-- what should change next Sprint.
+- whether the Definition of Done worked;
+- what should change in the next Sprint.
 
 Record at least **two concrete improvement actions**.
+
+**Capture**
+- Daily Scrum #3;
+- final Sprint Backlog;
+- working Increment evidence;
+- stakeholder feedback;
+- backlog adaptations from the Sprint Review;
+- retrospective findings;
+- improvement actions.
 
 ---
 
