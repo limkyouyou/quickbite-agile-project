@@ -293,16 +293,16 @@ Developers estimate collaboratively after the Product Owner explains each PBI.
 
 ## 7. Definition of Done
 
-A Sprint PBI is Done when:
+A Sprint PBI is considered **Done** when:
 
-- acceptance criteria are satisfied;
-- implementation is complete;
-- work is committed on an appropriate branch;
-- another team member reviewed the pull request;
-- relevant tests pass;
-- the feature is integrated;
-- no known critical defect remains;
-- GitHub Project is updated.
+- All acceptance criteria for the PBI are satisfied.
+- The implementation is complete and works as expected.
+- The work is committed to an appropriate feature branch.
+- A pull request has been created and reviewed by at least one other team member.
+- Relevant automated tests have been completed and pass.
+- The feature has been integrated into the working Increment.
+- No known critical defects remain.
+- The GitHub Project status has been updated to **Done**.
 
 ---
 
