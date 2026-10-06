@@ -264,30 +264,39 @@ All members must:
 
 ## 6. Product Backlog
 
-Create at least 10 PBIs.
+The Product Backlog contains the currently known work for the QuickBite product.  
+PBIs are ordered by product value and dependency, not by PBI number.
 
-Suggested backlog:
+| Order | PBI | Title | Priority | Estimate | Sprint |
+|---|---|---|---|---:|---|
+| 1 | PBI-05 | Browse Restaurants | High | 3 | Future |
+| 2 | PBI-01 | View Restaurant Menu | High | 3 | Current Sprint |
+| 3 | PBI-02 | Select Menu Items | High | 3 | Current Sprint |+
+| 4 | PBI-03 | Select Pickup Time | High | 2 | Current Sprint |
+| 5 | PBI-04 | Submit Order | High | 5 | Current Sprint |
+| 6 | PBI-06 | Restaurant Views Incoming Orders | High | 5 | Future |
+| 7 | PBI-07 | Restaurant Updates Order Status | Medium | 3 | Future |
+| 8 | PBI-08 | Customer Views Order Status | Medium | 3 | Future |
+| 9 | PBI-09 | Cancel Order | Medium | 3 | Future |
+| 10 | PBI-10 | Restaurant Manages Menu | Medium | 5 | Future |
+| 11 | PBI-11 | Customer Account and Login | Low | 8 | Future |
+| 12 | PBI-12 | Order Confirmation Notification | Low | 5 | Future |
+| 13 | PBI-13 | Payment Support | Low | 8 | Future |
 
-1. View restaurant menu.
-2. Place simple order.
-3. Select pickup time.
-4. Restaurant views incoming orders.
-5. Restaurant updates order status.
-6. Customer views order status.
-7. Browse multiple restaurants.
-8. Cancel order.
-9. Restaurant manages menu.
-10. Customer account/login.
-11. Order confirmation notification.
-12. Payment support.
+Detailed descriptions, user stories, and acceptance criteria for each PBI are maintained in the corresponding GitHub Issues.
 
-Only PBIs 1–2 are initially planned for this Sprint.
+Only PBIs 1–4 are initially planned for this Sprint.
 
-Use story-point estimates:
+### Estimation
 
-`1, 2, 3, 5, 8`
+Technique: Story Points
+Scale: 1, 2, 3, 5, 8
 
-Developers estimate collaboratively after the Product Owner explains each PBI.
+The team used Story Points to estimate Product Backlog Items. 
+ - Story Points compare PBIs based on the amount of work, technical complexity, uncertainty, risk, and dependencies. 
+We used a Fibonacci-style scale of 1, 2, 3, 5, and 8. 
+ - The Fibonacci-style scale reflects that larger work is harder to estimate precisely. The estimates were discussed and agreed on by the team. 
+
 
 ---
 
